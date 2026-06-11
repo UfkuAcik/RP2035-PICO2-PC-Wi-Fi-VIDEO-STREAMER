@@ -1,0 +1,3 @@
+[submodule "pico_receiver/PicoDVI"]
+	path = pico_receiver/PicoDVI
+	url = https://github.com/Wren6991/PicoDVI.git

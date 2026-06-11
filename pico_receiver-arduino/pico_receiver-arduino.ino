@@ -217,7 +217,7 @@ static void __attribute__((section(".time_critical.udp_audio"))) udp_audio_recv_
 }
 
 void setup() {
-    // Exact 252MHz clock is strictly required for DVI 640x480!
+    // 252.0 MHz is a clean PLL multiple close to the 25.175 MHz pixel clock required by DVI 640x480
     // Voltage bump is required for stability under heavy Wi-Fi + DVI load!
     vreg_set_voltage(VREG_VOLTAGE_1_25);
     delay(10);

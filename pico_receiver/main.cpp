@@ -194,7 +194,7 @@ static void __time_critical_func(udp_audio_recv_callback)(void *arg, struct udp_
 int main() {
     vreg_set_voltage(VREG_VOLTAGE_1_25); // Increase voltage for stable 252MHz overclock
     sleep_ms(10);
-    set_sys_clock_khz(252000, true); // DVI requires EXACTLY 252.0 MHz for 640x480!
+    set_sys_clock_khz(252000, true); // 252.0 MHz is a clean PLL multiple close to the 25.175 MHz pixel clock required by DVI 640x480
     stdio_init_all();
     printf("Starting UDP Mode...\n");
 

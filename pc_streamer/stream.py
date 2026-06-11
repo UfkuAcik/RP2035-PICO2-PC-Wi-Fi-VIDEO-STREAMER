@@ -5,8 +5,6 @@ import struct
 import subprocess
 import time
 import threading
-import soundcard as sc
-import numpy as np
 import ctypes
 import os
 
